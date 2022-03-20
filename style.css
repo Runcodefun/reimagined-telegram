@@ -278,14 +278,13 @@ main header p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1em;
 }
 
 .services .services__inner li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 0;
+  margin: 1em;
   padding: 2em;
   list-style-type: none;
   border-radius: 1em;
@@ -319,12 +318,14 @@ main header p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5em;
+  margin: 0;
+  padding: 0;
 }
 
 .friends .friends__inner li {
   width: 100px;
-  margin: 0;
+  margin: 1em;
+  padding-top: 1em;
   list-style-type: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -336,12 +337,14 @@ main header p {
 }
 
 .map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  width: 100%;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 0;
+  margin: 0;
 }
 
 .map svg {
@@ -421,6 +424,11 @@ main header p {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .map svg {
     width: 30%;
